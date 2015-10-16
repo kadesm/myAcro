@@ -1,0 +1,25 @@
+<ion-view view-title="Find a Partner!">
+  <ion-content class="padding">
+    <ion-list>
+      <label class="item item-select">
+        <span class="input-label"> I'm a...</span>
+        <selecpbt>flyer</select>
+        
+      </label>
+      <label class="item item-select">
+        <span class="input-label"> ...looking for a...</span>
+         </label>
+      
+    <div class="list card">
+      <div class="item item-divider">Map</div>
+      <div class="item item-body">
+        <ion-pane>
+          <ion-content ng-controller="MapController">
+          </ion-content>
+        </ion-pane>
+      </div>
+ 
+
+    
+  </ion-content>
+</ion-view>
