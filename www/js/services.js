@@ -19,7 +19,7 @@ angular.module('starter.services', [])
       name: 'Front Plank',
       lastText: '',
       face: 'img/frontPlank.png',
-      video: 'img/frontPlankVideo.mp4'
+      video: 'img/frontPlankVideo.mp4',
     },{
       id:3,
       name: 'Throne',

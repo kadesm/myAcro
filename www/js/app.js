@@ -77,9 +77,6 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
       }
     }
   });
-
-
-
  /* .controller('MapController', function($scope, $cordovaGeolocation, $ionicloading){
    document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
