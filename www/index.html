@@ -35,6 +35,22 @@
 
     <script src="js/app.js"></script>
 
+    <!--Stuff for the Google Map:  https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- <script src= "js/map.js"></script> -->
+      <script function initialize() {
+      var mapCanvas = document.getElementById('map');
+      var mapOptions = {
+      center: new google.maps.LatLng(44.5403, -78.54683),
+      zoom: 8, <!-- 0 - 22 -->
+      mapTypeId: google.maps.MapTypeId.ROADMAP <!--ROADMAP, SATELLITE, HYBRID, TERRAIN -->
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   <body ng-app="starter">
     <!--
