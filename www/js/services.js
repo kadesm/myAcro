@@ -19,22 +19,15 @@ angular.module('starter.services', [])
       name: 'Front Plank',
       lastText: '',
       face: 'img/frontPlank.png',
-      video: [{src:$sce.trustAsResourceUrl('/img/frontPlankVideo.mp4'),type:'video/mp4'}]
+      video: [{src:$sce.trustAsResourceUrl('/img/frontPlankVideo.mp4'),type:'video/mp4'}],
+      description: 'And you front plank like this'
     },{
       id:3,
       name: 'Throne',
       lastText:'',
       face:'img/throne.png',
-      video: [{src:$sce.trustAsResourceUrl("http://static.videogular.com/assets/videos/videogular.mp4"),type:'video/mp4'}]
-      tracks: [
-    					{
-    						src: "http://www.videogular.com/assets/subs/pale-blue-dot.vtt",
-    						kind: "subtitles",
-    						srclang: "en",
-    						label: "English",
-    						default: ""
-    					}
-    				]
+      video: [{src:$sce.trustAsResourceUrl("http://static.videogular.com/assets/videos/videogular.mp4"),type:'video/mp4'}],
+      description: 'Sit on your mightly throne and pontificate.'
     }];
 
     return {
