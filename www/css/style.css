@@ -1,4 +1,14 @@
 /* Empty. Add your own CSS if you like */
+    #map {
+    width: auto;
+    height: 250px;
+    margin: auto:
+    background-color: #CCC;
+}
+.scroll{
+    height: 100%;
+}
+
 
 /* Videogular responsive container http://www.videogular.com/tutorials/how-to-start/
 
@@ -29,3 +39,12 @@
 		height: 409.5px;
 	}
 } */
+
+
+
+@map{
+    width: auto;
+    height: 250px;
+    margin: auto:
+    background-color: #CCC;
+}
