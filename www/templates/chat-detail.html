@@ -8,13 +8,11 @@
 <ion-view view-title="{{chat.name}}">
 
   <ion-content class="padding">
-
-    <img ng-src="{{chat.face}}" style="width: 100px; height: 100px">
-    <p>
-      {{chat.lastText}}
-    </p>
-		<videogular vg-theme="controller.config.theme">
-			<vg-media vg-src="chat.video" vg-tracks="chat.tracks"></vg-media>
+   
+   
+<!-- video -->
+	  <videogular vg-theme= "'lib/videogular-themes-default/videogular.css'">
+      <vg-media vg-src="chat.video" vg-tracks="chat.tracks"></vg-media>
 			<vg-controls>
 				<vg-play-pause-button></vg-play-pause-button>
 				<vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
@@ -33,5 +31,10 @@
 			<vg-poster vg-url="chat.face"></vg-poster>
 		</videogular>
 
+    <!-- Description -->
+<h2>{{chat.name}}</h2>
+    <p>
+     {{chat.description}} 
+    </p>
   </ion-content>
 </ion-view>
