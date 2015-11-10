@@ -6,3 +6,5 @@ platforms/
 plugins/
 
 *.js#
+
+*.log
