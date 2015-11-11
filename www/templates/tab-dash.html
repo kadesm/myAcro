@@ -19,10 +19,20 @@
       </label>
       
     <div class="list card">
-      <div class="item item-divider">Map</div>
       <div class="item item-body">
-        <div id="map"></div>
-      </div>
+      <div id="map"></div>
+        <body ng-controller="MapCtrl">
+         <ion-header-bar class="bar-dark">
+            <h1 class="title">Map</h1>
+         </ion-header-bar>
+         <ion-content>
+            <div id="map" data-tap-disabled="true"></div>
+          </ion-content>
+          <ion-footer-bar class="bar-dark">
+            <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
+          </ion-footer-bar>
+        </body>
+     <!-- </div>-->
   
     
   </ion-content>

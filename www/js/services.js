@@ -26,7 +26,7 @@ angular.module('starter.services', [])
       name: 'Throne',
       lastText:'',
       face:'img/throne.png',
-      video: [{src:$sce.trustAsResourceUrl("http://static.videogular.com/assets/videos/videogular.mp4"),type:'video/mp4'}],
+      video: [{src:$sce.trustAsResourceUrl("/img/throneVideo.mp4"),type:'video/mp4'}],
       description: 'Sit on your mightly throne and pontificate.'
     }];
 

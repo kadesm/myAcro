@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *">
     <title></title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -19,7 +19,7 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="cordova.js"></script>
-
+   
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
@@ -35,22 +35,9 @@
 
     <script src="js/app.js"></script>
 
-    <!--Stuff for the Google Map:  https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+    <!--Google Maps Javascript -->
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
     
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <!-- <script src= "js/map.js"></script> -->
-      <script function initialize() {
-      var mapCanvas = document.getElementById('map');
-      var mapOptions = {
-      center: new google.maps.LatLng(44.5403, -78.54683),
-      zoom: 8, <!-- 0 - 22 -->
-      mapTypeId: google.maps.MapTypeId.ROADMAP <!--ROADMAP, SATELLITE, HYBRID, TERRAIN -->
-      }
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
   </head>
   <body ng-app="starter">
     <!--
